@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPanel" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.GameViewController">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="688.0" layoutX="-56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="keyboard" layoutX="14.0" layoutY="193.0" prefHeight="190.0" prefWidth="372.0" style="-fx-border-color: a98e5d; -fx-border-width: 5; -fx-border-radius: 15;">
+         <children>
+            <Button layoutX="55.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="B" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="99.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="C" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="186.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="E" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="143.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="D" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="317.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="H" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="276.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="G" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="232.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="F" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="117.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="K" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="160.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="L" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="203.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="M" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="249.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="N" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="293.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="O" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="72.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="J" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="58.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="I" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="186.0" layoutY="105.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="S" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="231.0" layoutY="105.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="T" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="276.0" layoutY="105.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="U" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="117.0" layoutY="154.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="W" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="100.0" layoutY="105.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Q" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="143.0" layoutY="105.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="R" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="55.0" layoutY="105.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="P" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="160.0" layoutY="154.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="X" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="72.0" layoutY="154.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="V" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="203.0" layoutY="154.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Y" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="249.0" layoutY="154.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="Z" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #fce8a0; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" text="A" textFill="#736041">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <ImageView fx:id="manView" fitHeight="280.0" fitWidth="289.0" layoutX="387.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hang0.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="livesView" fitHeight="53.0" fitWidth="218.0" layoutX="400.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/item1.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="wordBox" layoutX="41.0" layoutY="96.0" prefHeight="75.0" prefWidth="318.0" spacing="5.0" styleClass="letterBox" />
+      <Label fx:id="loseLabel" alignment="CENTER" layoutX="41.0" layoutY="27.0" prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: #f8504f; -fx-border-color: #8b100e; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="You lost!" textFill="#8b100e" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="winLabel" alignment="CENTER" layoutX="216.0" layoutY="27.0" prefHeight="42.0" prefWidth="126.0" style="-fx-background-color: #afcf28; -fx-border-color: #495809; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="You won!" textFill="#495809" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="secretWord" alignment="CENTER" layoutX="104.0" layoutY="152.0" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: a98e5d; -fx-border-color: 000000; -fx-border-width: 5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
